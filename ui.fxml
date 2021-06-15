@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+<VBox spacing="10" alignment="CENTER" prefWidth="700" prefHeight="700" fx:controller="application.Controller" xmlns:fx="http://javafx.com/fxml">
+    <fx:define>
+        <Font fx:id="FONT" size="18" />
+    </fx:define>
+    
+    <StackPane alignment="CENTER">
+        <Rectangle fill="TRANSPARENT" stroke="GRAY" width="230" height="50" />
+        <Text fx:id="output" font="$FONT" />
+    </StackPane>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="7" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="8" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="9" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="/" prefWidth="50" font="$FONT" onAction="#processOperator" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="4" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="5" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="6" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="*" prefWidth="50" font="$FONT" onAction="#processOperator" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="1" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="2" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="3" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="-" prefWidth="50" font="$FONT" onAction="#processOperator" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="0" prefWidth="50" font="$FONT" onAction="#processNumpad" />
+        <Button text="," prefWidth="50" font ="$FONT" onAction="#processOperator" />
+        <Button text="=" prefWidth="50" font="$FONT" onAction="#processOperator" />
+        <Button text="+" prefWidth="50" font="$FONT" onAction="#processOperator" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="y= 0,5x" prefWidth="100" font="$FONT" onAction="#processGraph" />
+        <Button text="y= x" prefWidth="100" font ="$FONT" onAction="#processGraph" />
+        <Button text="y= 2x" prefWidth="100" font="$FONT" onAction="#processOperator" />
+        <Button text="y= 0,1x²" prefWidth="100" font="$FONT" onAction="#processOperator" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="y= x²" prefWidth="100" font="$FONT" onAction="#processNumpad" />
+        <Button text="y= 10x²" prefWidth="100" font ="$FONT" onAction="#processOperator" />
+        <Button text="y= 3sin(xπ/10)" prefWidth="150" font="$FONT" onAction="#processOperator" />
+        <Button text="y= 6 sin(xπ/10)" prefWidth="150" font="$FONT" onAction="#processOperator" />
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="y= 5 sin(xπ/10) + (5/3)sin(3xπ/10) + sin(xπ/2) + (5/7)sin(7x/10)" prefWidth="550" font="$FONT" onAction="#processNumpad" />
+    </HBox>
+    
+    
+   </VBox>
+    
